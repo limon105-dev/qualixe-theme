@@ -1,0 +1,16 @@
+/* brand-slider section css start */
+.brand-section {
+    padding: 20px 0;
+    background-color: var(--white);
+}
+
+.brand-slider-item-img {
+    width: 160px;
+    height: 40px;
+}
+
+.brand-slider-item-img img {
+    object-fit: contain;
+}
+
+/* brand-slider section css end */

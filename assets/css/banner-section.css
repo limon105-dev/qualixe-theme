@@ -1,0 +1,76 @@
+/* banner-section section css start */
+.banner-section {
+    background-color: rgba(3, 30, 105, 0.2);
+}
+
+.banner-section .banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.banner-section .banner-content {
+    width: 40%;
+}
+
+.banner-section .banner-content-text {
+    margin: 20px 0 0 0;
+}
+
+.banner-section .banner-content-btn {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.banner-section .banner-content-btn .btn {
+    width: 100%;
+}
+
+.banner-section .banner-img {
+    width: 55%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* banner-section section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* banner-section section css start */
+    .banner-section .banner-wrapper {
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    /* banner-section section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* banner-section section css start */
+    .banner-section .banner-wrapper {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .banner-section .banner-content {
+        width: 100%;
+        order: 2;
+    }
+
+    .banner-section .banner-content-text {
+        margin: 10px 0 0 0;
+    }
+
+    .banner-section .banner-content-btn {
+        margin: 16px 0 0 0;
+    }
+
+    .banner-section .banner-img {
+        width: 100%;
+        order: 1;
+    }
+
+    /* banner-section section css end */
+}

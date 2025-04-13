@@ -1,0 +1,85 @@
+/* hero-banner section css start */
+.section.hero-banner{
+    padding-bottom: 0;
+}
+
+.hero-banner .banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-banner .banner-content {
+    width: 40%;
+}
+
+.hero-banner .banner-content-text {
+    margin: 20px 0 0 0;
+}
+
+.hero-banner .banner-content-btn {
+    margin: 20px 0 0 0;
+    display: flex;
+}
+
+.hero-banner .banner-img {
+    width: 55%;
+}
+
+/* hero-banner section css end */
+
+@media only screen and (max-width: 992px) {
+
+    /* hero-banner section css start */
+    .hero-banner .banner-wrapper {
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    /* hero-banner section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* hero-banner section css start */
+    .section.hero-banner {
+        padding-bottom: 50px;
+    }
+
+    .hero-banner .banner-wrapper {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .hero-banner .banner-content {
+        width: 100%;
+        order: 2;
+    }
+
+    .hero-banner .banner-content-text {
+        margin: 10px 0 0 0;
+    }
+
+    .hero-banner .banner-content-btn {
+        margin: 16px 0 0 0;
+    }
+
+    .hero-banner .banner-img {
+        width: 100%;
+        order: 1;
+    }
+
+    /* hero-banner section css end */
+
+    @media only screen and (max-width: 575px) {
+
+        /* banner-section section css start */
+        .section.hero-banner {
+            padding-bottom: 30px;
+            padding-top: 60px;
+        }
+    
+        /* banner-section section css end */
+    }
+}
