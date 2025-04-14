@@ -14,3 +14,18 @@
 }
 
 /* brand-slider section css end */
+
+@media only screen and (max-width:767px) {
+
+    /* brand-slider section css start */
+    .brand-section {
+        padding: 10px 0;
+    }
+
+    .brand-slider-item-img {
+        width: 80px;
+        height: 30px;
+    }
+
+    /* brand-slider section css end */
+}

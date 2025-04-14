@@ -23,10 +23,6 @@
     display: flex;
 }
 
-.banner-section .banner-content-btn .btn {
-    width: 100%;
-}
-
 .banner-section .banner-img {
     width: 55%;
     border-radius: 15px;

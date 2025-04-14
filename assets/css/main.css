@@ -332,7 +332,6 @@ button {
 .section-heading {
     color: var(--heading-text-color);
     text-transform: capitalize;
-    font-weight: 300;
 }
 
 .section-heading-text {
@@ -385,6 +384,7 @@ button {
     color: var(--white);
     background-color: var(--btn-bg);
     transition: ease .3s;
+    border-radius: 50px;
 }
 
 .swiper-button-prev:hover,
@@ -535,7 +535,8 @@ button {
     gap: 30px;
 }
 
-.nav-links ul li a, .nav-links ul li span {
+.nav-links ul li a,
+.nav-links ul li span {
     color: var(--paragraph-text-color);
     font-size: 16px;
     font-weight: 600;
@@ -739,6 +740,7 @@ a.footer-mail {
 .copyright-text a:hover {
     text-decoration: underline;
 }
+
 /* footer-section css end */
 
 @media only screen and (max-width: 992px) {
@@ -876,6 +878,7 @@ a.footer-mail {
         width: 100%;
         z-index: 1;
     }
+
     /* navbar css end */
 
     /* footer-section css start */
@@ -922,6 +925,10 @@ a.footer-mail {
 
     h3 {
         font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
     }
 
     p {
@@ -1083,10 +1090,6 @@ a.footer-mail {
 
     .section-heading-wrapper {
         margin-bottom: 20px;
-    }
-
-    .section-heading {
-        font-weight: 400;
     }
 
     /* pagination css start */
