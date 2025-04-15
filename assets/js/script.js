@@ -27,11 +27,9 @@ $(document).ready(function () {
 	});
 
 	// navbar js end ---
-})
 
-// btn js ---
-// primary btn---
-$(function () {
+	// btn js start---
+	// primary btn---
 	$('.primary-btn')
 		.on('mouseenter', function (e) {
 			var parentOffset = $(this).offset(),
@@ -51,10 +49,8 @@ $(function () {
 				left: relX
 			})
 		});
-});
 
-// secondary btn--
-$(function () {
+	// secondary btn--
 	$('.secondary-btn')
 		.on('mouseenter', function (e) {
 			var parentOffset = $(this).offset(),
@@ -74,10 +70,31 @@ $(function () {
 				left: relX
 			})
 		});
-});
-// btn js ---
+	// btn js end---
 
-// banner slider js start--
+	let count = document.querySelectorAll(".counter")
+	let arr = Array.from(count)
+
+	arr.map(function (item) {
+		let startnumber = 0
+
+		function counterup() {
+			startnumber++
+			item.innerHTML = startnumber
+
+			if (startnumber == item.dataset.number) {
+				clearInterval(stop)
+			}
+		}
+
+		let stop = setInterval(function () {
+			counterup()
+		}, 0)
+
+	})
+})
+
+// testimonial slider js start--
 var swiper = new Swiper(".testimonial-slider", {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -99,7 +116,7 @@ var swiper = new Swiper(".testimonial-slider", {
 		// when window width is <= 1px
 		1: {
 			slidesPerView: 1.2,
-			spaceBetween:16
+			spaceBetween: 16
 		},
 		// when window width is <= 575px
 		575: {
@@ -108,7 +125,4 @@ var swiper = new Swiper(".testimonial-slider", {
 		}
 	}
 });
-// banner slider js end--
-
-// content animation--
-new WOW().init();
+// testimonial slider js end--

@@ -92,3 +92,29 @@
 }
 
 /* showcase section css end */
+
+@media only screen and (max-width:992px){
+    /* showcase section css start */
+    .showcase-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        row-gap: 30px;
+    }
+    /* showcase section css end */
+}
+
+@media only screen and (max-width: 767px){
+    /* showcase section css start */
+    .showcase-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .showcase-item-content {
+        margin: 10px 0 0 0;
+    }
+
+    .showcase-item-content-title {
+        font-size: 16px;
+    }
+    /* showcase section css end */
+}

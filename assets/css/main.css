@@ -80,15 +80,11 @@
     --heading-text-color: #000000;
     --paragraph-text-color: #000000;
     --brand-color: #031e69;
-    --item-bg: #f3f3f3;
-    --section-bg: #f3f3f3;
-    --card-bg: #ededed;
     --border-color: #d8d8d8;
-    --border-color2: #242833;
+    --border-color2: #031e69;
     --text-muted: #777777;
     --btn-color: #242833;
     --btn-bg: #031e69;
-    --card-badge-bg: #242833;
     --body-color: #eeecea;
     --hover-color: #3a6dfd;
 
@@ -166,7 +162,7 @@ h4 {
 
 h5 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h6 {
@@ -928,7 +924,15 @@ a.footer-mail {
     }
 
     h4 {
-        font-size: 22px;
+        font-size: 20px;
+    }
+    
+    h5 {
+        font-size: 18px;
+    }
+    
+    h6 {
+        font-size: 16px;
     }
 
     p {
@@ -1073,10 +1077,6 @@ a.footer-mail {
 
     h3 {
         font-size: 22px;
-    }
-
-    h6 {
-        font-size: 18px;
     }
 
     .section {

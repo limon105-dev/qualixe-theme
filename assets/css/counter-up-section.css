@@ -1,0 +1,58 @@
+/* counter-up section css start */
+.counter-up-section {
+    background-color: var(--brand-color);
+}
+
+.counter-up-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.counter-up-item {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.counter-up-item:not(:last-child) {
+    border-right: 1px dashed var(--white);
+}
+
+.counter-up-number {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    line-height: 1.2;
+}
+
+.counter-up-number .number {
+    margin: 0 4px 0;
+}
+
+.counter-up-title {
+    margin: 6px 0 12px 0;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.counter-up-icon {
+    color: var(--white);
+}
+
+/* counter-up section css end */
+
+@media only screen and (max-width:576px) {
+    /* counter-up section css start */
+    .counter-up-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .counter-up-item:not(:last-child) {
+        border-right: 0;
+    }
+    /* counter-up section css end */
+
+}
